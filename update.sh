@@ -12,10 +12,12 @@ echo 'PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/ga
 for args in "$@"
 do
    if [[ $args == **/**  ]]; then
-	   echo $args
 	   last_dir=$args
    fi
 done
 
 echo 'last_dir="'$last_dir'"' >> environment
-bash /home/colasuonno/Desktop/Dev/bash_scripts/update-non-static-env/source.sh
+export ld=$last_dir
+echo 'exported ' $ld
+#cd $stored
+#bash /home/colasuonno/Desktop/Dev/bash_scripts/update-non-static-env/source.sh
