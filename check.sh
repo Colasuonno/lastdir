@@ -7,7 +7,6 @@ last=$(last_command)
 if [ ${#last} > 0 ]; then
 	if [[ $last == **/**  ]]; then
 		export stored=$OLDPWD
-		echo 'stored' $stored
 		. ./update.sh $last
 		#sudo bash /home/colasuonno/Desktop/Dev/bash_scripts/update-non-static-env/update.sh $last
 	

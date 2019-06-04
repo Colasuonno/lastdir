@@ -18,6 +18,5 @@ done
 
 echo 'last_dir="'$last_dir'"' >> environment
 export ld=$last_dir
-echo 'exported ' $ld
 #cd $stored
 #bash /home/colasuonno/Desktop/Dev/bash_scripts/update-non-static-env/source.sh
